@@ -1,0 +1,73 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parts
+    - node.type.advanced_page
+    - paragraphs.paragraphs_type.department
+    - paragraphs.paragraphs_type.highlights
+    - paragraphs.paragraphs_type.news_list
+    - paragraphs.paragraphs_type.person
+    - paragraphs.paragraphs_type.program
+    - paragraphs.paragraphs_type.resource
+    - paragraphs.paragraphs_type.resource_list
+    - paragraphs.paragraphs_type.resource_section
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - entity_reference_revisions
+id: node.advanced_page.field_parts
+field_name: field_parts
+entity_type: node
+bundle: advanced_page
+label: Parts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      department: department
+      resource: resource
+      news_list: news_list
+      person: person
+      rich_text: rich_text
+      highlights: highlights
+      program: program
+      resource_section: resource_section
+      resource_list: resource_list
+    negate: 0
+    target_bundles_drag_drop:
+      department:
+        weight: 6
+        enabled: true
+      highlights:
+        weight: 11
+        enabled: true
+      news_list:
+        weight: 9
+        enabled: true
+      person:
+        weight: 9
+        enabled: true
+      program:
+        weight: 11
+        enabled: true
+      resource:
+        weight: 8
+        enabled: true
+      resource_list:
+        weight: 17
+        enabled: true
+      resource_section:
+        weight: 15
+        enabled: true
+      rich_text:
+        weight: 9
+        enabled: true
+      social_media_link:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

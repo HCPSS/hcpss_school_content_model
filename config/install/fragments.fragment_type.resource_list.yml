@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: resource_list
+label: 'Resource List'
+description: 'A list of resources.'

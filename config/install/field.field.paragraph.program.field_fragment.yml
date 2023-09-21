@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fragment
+    - fragments.fragment_type.program
+    - paragraphs.paragraphs_type.program
+id: paragraph.program.field_fragment
+field_name: field_fragment
+entity_type: paragraph
+bundle: program
+label: Program
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:fragment'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

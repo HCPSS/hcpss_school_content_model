@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_resource_lists
+    - fragments.fragment_type.resource_list
+    - paragraphs.paragraphs_type.resource_section
+id: paragraph.resource_section.field_resource_lists
+field_name: field_resource_lists
+entity_type: paragraph
+bundle: resource_section
+label: 'Resource Lists'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:fragment'
+  handler_settings:
+    target_bundles:
+      resource_list: resource_list
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

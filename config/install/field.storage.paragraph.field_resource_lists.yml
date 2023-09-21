@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - fragments
+    - paragraphs
+id: paragraph.field_resource_lists
+field_name: field_resource_lists
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: fragment
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

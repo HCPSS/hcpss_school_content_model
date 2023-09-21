@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: highlights
+label: Highlights
+icon_uuid: null
+icon_default: null
+description: 'A grid of select news and event content.'
+behavior_plugins: {  }

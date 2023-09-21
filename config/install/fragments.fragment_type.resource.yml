@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: resource
+label: Resource
+description: 'A link and description.'

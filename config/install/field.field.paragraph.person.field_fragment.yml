@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fragment
+    - fragments.fragment_type.person
+    - paragraphs.paragraphs_type.person
+id: paragraph.person.field_fragment
+field_name: field_fragment
+entity_type: paragraph
+bundle: person
+label: Person
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:fragment'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
