@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.fragment.field_staff_label
+    - fragments.fragment_type.program
+id: fragment.program.field_staff_label
+field_name: field_staff_label
+entity_type: fragment
+bundle: program
+label: 'Staff Label'
+description: 'What should we call the associated staff? (Coaches, Advisors, etc.)'
+required: true
+translatable: false
+default_value:
+  -
+    value: Advisors
+default_value_callback: ''
+settings: {  }
+field_type: string

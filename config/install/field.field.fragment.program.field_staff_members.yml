@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.fragment.field_staff_members
+    - fragments.fragment_type.person
+    - fragments.fragment_type.program
+id: fragment.program.field_staff_members
+field_name: field_staff_members
+entity_type: fragment
+bundle: program
+label: Staff
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:fragment'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

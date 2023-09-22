@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.school_settings
+    - field.storage.config_pages.field_walk_area
+  module:
+    - link
+id: config_pages.school_settings.field_walk_area
+field_name: field_walk_area
+entity_type: config_pages
+bundle: school_settings
+label: 'Walk Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

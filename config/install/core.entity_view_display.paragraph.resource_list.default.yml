@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.resource_list.field_fragment
+    - paragraphs.paragraphs_type.resource_list
+id: paragraph.resource_list.default
+targetEntityType: paragraph
+bundle: resource_list
+mode: default
+content:
+  field_fragment:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

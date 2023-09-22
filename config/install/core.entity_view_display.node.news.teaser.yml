@@ -1,0 +1,155 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.body
+    - field.field.node.news.field_tags
+    - node.type.news
+  module:
+    - layout_builder
+    - layout_discovery
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          1c643de5-26e3-423b-a07f-eab2237f9774:
+            uuid: 1c643de5-26e3-423b-a07f-eab2237f9774
+            region: title
+            configuration:
+              id: 'field_block:node:news:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: smart_trim
+                label: hidden
+                settings:
+                  trim_length: 200
+                  trim_type: chars
+                  trim_suffix: ...
+                  wrap_output: false
+                  wrap_class: trimmed
+                  summary_handler: full
+                  trim_options:
+                    text: true
+                    trim_zero: false
+                  more_link: false
+                  more_class: more-link
+                  more_text: 'Read more'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          193e91f8-df67-4645-8d90-5f72a76a2681:
+            uuid: 193e91f8-df67-4645-8d90-5f72a76a2681
+            region: title
+            configuration:
+              id: 'field_block:node:news:field_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: drulma_entity_reference_label_tags
+                label: above
+                settings:
+                  size: ''
+                  color: ''
+                  rounded: false
+                  inline: true
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          8ee665f1-49dc-4892-ab1d-b1be9371c1b3:
+            uuid: 8ee665f1-49dc-4892-ab1d-b1be9371c1b3
+            region: title
+            configuration:
+              id: 'extra_field_block:node:news:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+          7beb957b-b382-45c5-97a4-8a8c912fa49f:
+            uuid: 7beb957b-b382-45c5-97a4-8a8c912fa49f
+            region: content
+            configuration:
+              id: 'field_block:node:news:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          30cc5893-600a-4203-a6de-9d105d3dd7a2:
+            uuid: 30cc5893-600a-4203-a6de-9d105d3dd7a2
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ...
+      wrap_output: false
+      wrap_class: trimmed
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      more_link: false
+      more_class: more-link
+      more_text: 'Read more'
+    third_party_settings: {  }
+    weight: 0
+    region: title
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: title
+hidden:
+  extra_field_content_url_field: true

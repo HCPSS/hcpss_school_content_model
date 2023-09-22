@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - fragments
+id: fragment.field_resources
+field_name: field_resources
+entity_type: fragment
+type: entity_reference
+settings:
+  target_type: fragment
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

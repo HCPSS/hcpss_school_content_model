@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.fragment.resource.field_description
+    - field.field.fragment.resource.field_url
+    - fragments.fragment_type.resource
+id: fragment.resource.default
+targetEntityType: fragment
+bundle: resource
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  linked_title:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_url: true
+  title: true
+  user_id: true
