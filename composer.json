@@ -14,5 +14,14 @@
     "support": {
         "issues": "https://github.com/HCPSS/hcpss_school_content_model",
         "source": "https://github.com/HCPSS/hcpss_school_content_model"
+    },
+    "require": {
+        "php": "^8.0",
+        "drupal/core": "^9.5 || ^10",
+        "drupal/fontawesome": "2.26",
+        "drupal/fragments": "^2.0",
+        "drupal/paragraphs": "^1.12",
+        "drupal/smart_date": "^3.4",
+        "drupal/viewsreference": "^1.4"
     }
 }

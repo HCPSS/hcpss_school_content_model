@@ -1,34 +1,24 @@
 name: 'HCPSS School Content Model'
-description: 'HCPSS content and fragment types.'
+description: 'HCPSS school content, paragraph, and fragment types.'
 type: module
 core_version_requirement: '^9.4 || ^10'
 dependencies:
-  - add_content_by_bundle
-  - drulma_companion
+  - ckeditor5
+  - editor
   - entity_reference_revisions
   - field
-  - file
+  - filter
+  - fontawesome
   - fragments
-  - fullcalendar_view
-  - layout_builder
-  - layout_discovery
-  - media
-  - media_library
   - menu_ui
   - node
-  - panelizer
   - paragraphs
-  - paragraphs_ee
-  - paragraphs_features
-  - paragraphs_type_permissions
   - path
   - smart_date
   - smart_date_recur
-  - smart_trim
   - taxonomy
   - text
   - user
   - views
   - viewsreference
 version: 1.0.0
-package: HCPSS
