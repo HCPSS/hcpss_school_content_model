@@ -1,0 +1,18 @@
+{
+    "name": "hcpss/hcpss_school_content_model",
+    "description": "Content and fragment types for HCPSS school sites.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Brendan Anderson",
+            "homepage": "https://github.com/hcpss-banderson",
+            "role": "Maintainer"
+        }
+    ],
+    "homepage": "https://github.com/HCPSS/hcpss_school_content_model",
+    "support": {
+        "issues": "https://github.com/HCPSS/hcpss_school_content_model",
+        "source": "https://github.com/HCPSS/hcpss_school_content_model"
+    }
+}
