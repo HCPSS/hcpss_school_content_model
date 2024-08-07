@@ -15,16 +15,10 @@
         "issues": "https://github.com/HCPSS/hcpss_school_content_model",
         "source": "https://github.com/HCPSS/hcpss_school_content_model"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/issue/fontawesome-3465765.git"
-        }
-    ],
     "require": {
         "php": "^8.0",
         "drupal/core": "^9.5 || ^10",
-        "drupal/fontawesome": "dev-3465765-drupal-11-compatibility",
+        "drupal/fontawesome": "^2.0",
         "drupal/fragments": "^2.0",
         "drupal/paragraphs": "^1.12",
         "drupal/smart_date": "^4.0",
