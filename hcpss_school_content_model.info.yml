@@ -1,7 +1,7 @@
 name: 'HCPSS School Content Model'
 description: 'HCPSS school content, paragraph, and fragment types.'
 type: module
-core_version_requirement: '^9.4 || ^10' || '^11'
+core_version_requirement: '^9.4 || ^10 || ^11'
 dependencies:
   - 'drupal:ckeditor5'
   - 'drupal:editor'
