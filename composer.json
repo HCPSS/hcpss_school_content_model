@@ -21,7 +21,7 @@
         "drupal/fontawesome": "2.26",
         "drupal/fragments": "^2.0",
         "drupal/paragraphs": "^1.12",
-        "drupal/smart_date": "^3.4",
+        "drupal/smart_date": "^4.0",
         "drupal/viewsreference": "^1.4",
         "drupal/svg_image_field": "^2.2"
     }
